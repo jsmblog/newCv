@@ -10,7 +10,7 @@ const Principal = ({whatsapp , linkedin , html , css , js , react , github , sla
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3800,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         pagination={{
