@@ -15,6 +15,8 @@ import github from './Img/github.png'
 import slack from './Img/slack.png'
 import notion from './Img/notion.png'
 import bootstrap from './Img/bootstrap.png'
+import sol from './Img/sol.png'
+import equis from './Img/letra-x.png'
 /************************************************************/
 import NavBar from './Components/NavBar'
 import './App.css'
@@ -23,15 +25,25 @@ import { useState } from 'react'
 
 function App() {
  const [darkMode, setDarkMode] = useState(false)
+ const [downloadCv, setdownLoadCv] = useState(false)
+
  const changeDarkMode = ()=> {
   setDarkMode(!darkMode)
   console.log(darkMode)
  }
- const isOnDarkMode = (darkMode) ? "onDarkMode" : ""
+ const changeDlCv = ()=> {
+  setdownLoadCv(!downloadCv)
+  console.log(downloadCv)
+ }
+ const isOnDarkMode = (darkMode) ? "onDarkMode" : "" ;
+ const changeIconDm = (darkMode) ? `${sol}` : `${moon}` ;
+
+ const isOnDlCv = (downloadCv) ? "menuHamburguer slide-in-right" : "" ;
+ const changeIconMh = (downloadCv) ? `${equis}` : `${menuHam}` ;
   return (
     <>
      <div id={`${isOnDarkMode}`} className='APP'> 
-     <NavBar changeDarkMode={changeDarkMode} menuHam={menuHam} translateLogo={translateLogo} iconCellphone={iconCellphone} portfolio={portfolio} moon={moon} />
+     <NavBar changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} portfolio={portfolio}  />
       <Principal html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
      </div>
     </>
