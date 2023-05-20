@@ -13,7 +13,7 @@
 }
 .contPrincipal { 
     background-color: var(--co-body-principal);
-    height: 100vh;
+    height: 87vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
