@@ -27,8 +27,8 @@ const Principal = ({whatsapp , linkedin , html , css , js , react , github , sla
                 <div><h1>{`I'm Joel Saldarriaga Mera`}</h1></div>
                 <div><h2>Developer <span className="spanPrinc">Web Frontend</span></h2></div>
                 <div className="positBtn">
-                    <button><img width={30} src={whatsapp} alt="" /></button>
-                    <button><img width={30} src={linkedin} alt="" /></button>
+                    <a href="https://api.whatsapp.com/send?phone=593962915626" target="_blank" rel="noopener noreferrer"><button><img width={30} src={whatsapp} alt="" /></button></a>
+                    <a href="https://www.linkedin.com/in/joel-mera-32760923a" target="_blank" rel="noopener noreferrer"><button><img width={30} src={linkedin} alt="" /></button></a>
                 </div>
                 </div>
             </div>

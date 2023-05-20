@@ -26,6 +26,7 @@ import { useState } from 'react'
 function App() {
  const [darkMode, setDarkMode] = useState(false)
  const [downloadCv, setdownLoadCv] = useState(false)
+ const [cellphone, setCellphone] = useState(false)
 
  const changeDarkMode = ()=> {
   setDarkMode(!darkMode)
@@ -35,15 +36,22 @@ function App() {
   setdownLoadCv(!downloadCv)
   console.log(downloadCv)
  }
+
+ const changeCellphone = ()=> {
+  setCellphone(!cellphone)
+  console.log(cellphone)
+ }
+
  const isOnDarkMode = (darkMode) ? "onDarkMode" : "" ;
  const changeIconDm = (darkMode) ? `${sol}` : `${moon}` ;
 
  const isOnDlCv = (downloadCv) ? "menuHamburguer slide-in-right" : "" ;
+ const isOnCellphone = (cellphone) ? "cellPhoneAndEmail slide-in-right" : "" ;
  const changeIconMh = (downloadCv) ? `${equis}` : `${menuHam}` ;
   return (
     <>
      <div id={`${isOnDarkMode}`} className='APP'> 
-     <NavBar changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} portfolio={portfolio}  />
+     <NavBar isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} portfolio={portfolio}  />
       <Principal html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
      </div>
     </>

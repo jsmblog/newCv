@@ -45,13 +45,35 @@
     background-color: var(--co-cyan-sky-navbar);
     border-radius: 5px;
     border: 1px solid var(--co-dm-blue);
-    padding: 2rem;
+    padding: .9rem;
+    font-weight: bold;
 }
 .aOff {
     display: none;
 }
 .menuHamburguer {
     display: inline-flex;
+}
+.cellPhoneAndEmail {
+  display: inline-block;
+  padding: .5rem;
+  position: absolute;
+  bottom:5rem;
+  z-index: 2;
+  left: 40vw;
+  background-color: var(--co-cyan-sky-navbar);
+    border-radius: 5px;
+    border: 1px solid var(--co-dm-blue);
+}
+.cellPhoneAndEmail button {
+  border: none;
+  background-color: var(--co-cyan-sky-navbar);
+}
+.cellPhoneAndEmail {
+  display: none;
+}
+.cellPhoneAndEmail {
+  display: inline;
 }
 /*animations*/
 .slide-in-right {
