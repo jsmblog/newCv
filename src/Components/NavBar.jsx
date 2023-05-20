@@ -1,5 +1,23 @@
+import { useState } from "react";
 
 const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort}) => {
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const handleDownload = () => {
+    const pdfURL = '/src/Img/Cv-rb-JoelSm.pdf';
+    const link = document.createElement('a');
+    link.href = pdfURL;
+    link.download = 'Cv-Joel.pdf';
+    link.click();
+
+    // Mostrar el mensaje de éxito durante 2 segundos
+    setShowSuccessMessage(true);
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 2500);
+  }
+  
   return (
     <>
     <nav className="navBarMenu">
@@ -13,7 +31,8 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
       <span className="JSM">JSM</span>
     </div>
     <div>
-      <a className={`${isOnDlCv} aOff`} download href="/src/Img/Cv-rb-JoelSm.pdf">Download Cv ↓</a>
+    {showSuccessMessage && <div className="PDFdownloaded">PDF downloaded successfully...</div>}
+      <a className={`${isOnDlCv} aOff`} download href="#" onClick={handleDownload}>Download Cv ↓</a>
     </div>
     <div className={`${isOnCellphone} aOff`}>
       <div><a href="tel:+593962915626" ><button><h2>CellPhone →</h2></button></a></div>

@@ -83,6 +83,15 @@
 .cellPhoneAndEmail {
   display: inline;
 }
+.PDFdownloaded {
+  position: absolute;
+  z-index: 5;
+  border: 1px solid var(--co-dm-blue);
+  border-radius: 7px;
+  padding: .4rem;
+top: 75%;
+  left: 2%;
+}
 /*animations*/
 .slide-in-right {
 	-webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
