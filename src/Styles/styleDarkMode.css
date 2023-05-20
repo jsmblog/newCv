@@ -1,0 +1,28 @@
+/*styles dark mode*/
+#onDarkMode .navBarMenu {
+    background-color: var(--co-dm-blue);
+    border-top: 3px solid #DBE2EF ;
+    transition: 2s ease-in-out;
+}
+#onDarkMode .contPrincipal {
+    background-color: var(--co-dm-blue-sky);
+    transition: 2s ease-in-out;
+}
+#onDarkMode * {
+    color: var(--co-dm-blue);
+    transition: 2s ease-in-out;
+}
+#onDarkMode .contPrincipalData {
+    border-top: 3px solid var(--co-dm-blue);
+    border-bottom: 3px solid var(--co-dm-blue);
+    transition: 2s ease-in-out;
+}
+
+#onDarkMode .contPrincipal_row {
+background-color:#DBE2EF;
+transition: 2s ease-in-out;
+}
+#onDarkMode .spanPrinc {
+    background-color:#DBE2EF; 
+    transition: 2s ease-in-out;  
+}

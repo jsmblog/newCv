@@ -1,0 +1,38 @@
+/*styles of NavBar*/
+.navBarMenu {
+    z-index: 2;
+    border-top: 3px solid var(--co-line-orange-opacity);
+    background-color: var(--co-cyan-sky-navbar);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    padding: .5rem 0;
+}
+.navBarMenu div {
+    cursor: pointer;
+}
+.navBarMenu img {
+    border: 1px solid var(--co-cyan-white);
+    padding: .28rem;
+    border-radius: 5px;
+}
+.JSM {
+    font-size: 1.4rem;
+    position: absolute;
+    top: .5rem;
+    z-index: 2;
+    left: .5rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+/*hover*/
+.navBarMenu img:hover {
+    background-color: #DBE2EF;
+    transition: .5s ease-in-out;
+}

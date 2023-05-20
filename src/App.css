@@ -1,0 +1,28 @@
+/*google fonts*/
+/*********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap');
+/*********************************************/
+/*root variables color*/
+:root {
+--co-body-principal : #F5EFE6;
+--co-cyan-sky-navbar : #B9D7EA;
+--co-cyan-white : #DBEDF3;
+--co-line-orange-opacity :#E8DFCA;
+--co-letter-blue-sky : #3F72AF;
+--co-dm-blue : #19376D;
+--co-dm-blue-sky :#DBEDF3;
+}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Abhaya Libre', serif;
+  color:var(--co-letter-blue-sky) ;
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--co-body-principal);
+}
