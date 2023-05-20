@@ -40,6 +40,9 @@
     border: none;
     cursor: pointer;
 }
+#myName{
+    color: var(--co-dm-blue);
+}
 .contPrincipal_row {
     background-color: var(--co-line-orange-opacity);
     justify-content: center;

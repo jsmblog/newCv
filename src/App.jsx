@@ -50,7 +50,7 @@ function App() {
  const changeIconMh = (downloadCv) ? `${equis}` : `${menuHam}` ;
   return (
     <>
-     <div id={`${isOnDarkMode}`} className='APP'> 
+     <div id={`${isOnDarkMode}`}> 
      <NavBar isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} portfolio={portfolio}  />
       <Principal html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
      </div>

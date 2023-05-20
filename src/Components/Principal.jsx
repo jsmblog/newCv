@@ -10,7 +10,7 @@ const Principal = ({whatsapp , linkedin , html , css , js , react , github , sla
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3800,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -24,7 +24,7 @@ const Principal = ({whatsapp , linkedin , html , css , js , react , github , sla
             <div className="contPrincipal" >
                 <div className="contPrincipalData">
                 <div><h2>¡ HI !</h2></div>
-                <div><h1>{`I'm Joel Saldarriaga Mera`}</h1></div>
+                <div><h1>{`I'm`} <span id="myName">Joel Saldarriaga Mera</span></h1></div>
                 <div><h2>Developer <span className="spanPrinc">Web Frontend</span></h2></div>
                 <div className="positBtn">
                     <a href="https://api.whatsapp.com/send?phone=593962915626" target="_blank" rel="noopener noreferrer"><button><img width={30} src={whatsapp} alt="" /></button></a>

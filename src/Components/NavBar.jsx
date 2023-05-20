@@ -13,7 +13,7 @@ const NavBar = ({translateLogo , iconCellphone , portfolio , changeDarkMode , ch
       <span className="JSM">JSM</span>
     </div>
     <div>
-      <a className={`${isOnDlCv} aOff`} download href="/src/Img/Cv-JoelSm.pdf" target="_blank" rel="noopener noreferrer">Download Cv ↓</a>
+      <a className={`${isOnDlCv} aOff`} download href="/src/Img/Cv-rb-JoelSm.pdf">Download Cv ↓</a>
     </div>
     <div className={`${isOnCellphone} aOff`}>
       <div><a href="tel:+593962915626" ><button><h2>CellPhone →</h2></button></a></div>

@@ -26,3 +26,7 @@ transition: 2s ease-in-out;
     background-color:#DBE2EF; 
     transition: 2s ease-in-out;  
 }
+#onDarkMode #myName {
+    color: var(--co-letter-blue-sky);
+    transition: 2s ease-in-out;
+}

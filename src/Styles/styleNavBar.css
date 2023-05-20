@@ -67,10 +67,18 @@
 }
 .cellPhoneAndEmail button {
   border: none;
+  box-shadow: 0 0 5px 1px var(--co-dm-blue);
+  border-radius: 7px;
+  margin: .2rem;
+  padding: .1rem;
+  cursor: pointer;
   background-color: var(--co-cyan-sky-navbar);
 }
 .cellPhoneAndEmail {
   display: none;
+}
+.cellPhoneAndEmail button:hover {
+  background-color: #DBE2EF;
 }
 .cellPhoneAndEmail {
   display: inline;
