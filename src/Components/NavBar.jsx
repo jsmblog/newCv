@@ -1,12 +1,12 @@
 
-const NavBar = ({translateLogo , iconCellphone , portfolio , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone}) => {
+const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort}) => {
   return (
     <>
     <nav className="navBarMenu">
         <div><img onClick={changeDlCv} width={45} src={changeIconMh} alt="img-" /></div>
         <div><img width={45} src={translateLogo} alt="img-" /></div>
         <div><img onClick={changeCellphone} width={45} src={iconCellphone} alt="img-" /></div>
-        <div><img width={45} src={portfolio} alt="img-" /></div>
+        <div><img onClick={changeVPort} width={45} src={changeIconSPort} alt="img-" /></div>
         <div><img onClick={changeDarkMode} width={45} src={changeIconDm} alt="img-" /></div>
     </nav>
     <div>

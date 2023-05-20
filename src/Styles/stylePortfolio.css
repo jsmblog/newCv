@@ -1,0 +1,96 @@
+.contPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 88%;
+}
+.contPortfolio {
+    display: none;
+}
+.contPortfolio {
+    display: inline;
+}
+.BoxPortfolio {
+background-color: var(--co-body-principal);
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 1rem;
+padding-right: 1.5rem;
+}
+.BoxPortfolio p , span {
+        font-size: .95rem;
+}
+.BoxPortfolio img {
+        border: none;
+        border-radius: 7px;
+background-color: #DBE2EF;
+}
+.BoxPortfolio button {
+        cursor: pointer;
+        border: 1px solid var(--co-dm-blue);
+        padding: .4rem;
+        border-radius: 7px;
+        font-weight: bold;
+        background-color: var(--co-cyan-sky-navbar);
+}
+.BoxPortfolio button:hover {
+        background-color: #DBE2EF;
+        color: var(--co-letter-blue-sky);
+}
+.BoxPortfolio p span {
+        letter-spacing: .2rem;
+        font-weight: bold;
+}
+.styleAncore {
+        border:1px solid var(--co-dm-blue);
+        padding: .15rem;
+        border-radius: 7px;
+}
+/*animations*/
+.slide-in-elliptic-left-fwd {
+	-webkit-animation: slide-in-elliptic-left-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-left-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-elliptic-left-fwd {
+    0% {
+      -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+              transform: translateX(-800px) rotateY(30deg) scale(0);
+      -webkit-transform-origin: -100% 50%;
+              transform-origin: -100% 50%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotateY(0) scale(1);
+              transform: translateX(0) rotateY(0) scale(1);
+      -webkit-transform-origin: 1800px 50%;
+              transform-origin: 1800px 50%;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-left-fwd {
+    0% {
+      -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+              transform: translateX(-800px) rotateY(30deg) scale(0);
+      -webkit-transform-origin: -100% 50%;
+              transform-origin: -100% 50%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotateY(0) scale(1);
+              transform: translateX(0) rotateY(0) scale(1);
+      -webkit-transform-origin: 1800px 50%;
+              transform-origin: 1800px 50%;
+      opacity: 1;
+    }
+  }
+  

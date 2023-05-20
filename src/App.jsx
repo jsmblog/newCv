@@ -17,12 +17,21 @@ import notion from './Img/notion.png'
 import bootstrap from './Img/bootstrap.png'
 import sol from './Img/sol.png'
 import equis from './Img/letra-x.png'
+import mUp1 from './Img/mockupOne.png'
+import mUp2 from './Img/mockupTwo.png'
+import mUp3 from './Img/mockupThird.png'
+import mUp4 from './Img/mockupFourth.png'
+import mUp5 from './Img/mockupFiveth.png'
+import mUp6 from './Img/mockupSixth.png'
+import mUp7 from './Img/mockupSeven.png'
+import mUp8 from './Img/mockupEight.png'
 /************************************************************/
 import NavBar from './Components/NavBar'
 import './App.css'
 import Principal from './Components/Principal'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import Portfolio from './Components/Portfolio'
 
 
 function App() {
@@ -30,6 +39,8 @@ function App() {
  const [downloadCv, setdownLoadCv] = useState(false)
  const [cellphone, setCellphone] = useState(false)
  const [isLoading, setIsLoading] = useState(true);
+ const [visibilityPortfolio, setVisibilityPortfolio] = useState(false)
+    
  const changeDarkMode = ()=> {
   setDarkMode(!darkMode)
   console.log(darkMode)
@@ -44,13 +55,19 @@ function App() {
   console.log(cellphone)
  }
 
+ const changeVPort = ()=> {
+  setVisibilityPortfolio(!visibilityPortfolio)
+  console.log(visibilityPortfolio)
+}
+
  const isOnDarkMode = (darkMode) ? "onDarkMode" : "" ;
  const changeIconDm = (darkMode) ? `${sol}` : `${moon}` ;
 
  const isOnDlCv = (downloadCv) ? "menuHamburguer slide-in-right" : "" ;
  const isOnCellphone = (cellphone) ? "cellPhoneAndEmail slide-in-right" : "" ;
  const changeIconMh = (downloadCv) ? `${equis}` : `${menuHam}` ;
-
+ const isOnSPort = (visibilityPortfolio) ? "contPortfolio slide-in-elliptic-left-fwd" : "" ;
+ const changeIconSPort = (visibilityPortfolio) ? `${equis}` : `${portfolio}` ;
  // effect loading 
  useEffect(() => {
   const timer = setTimeout(() => {
@@ -74,8 +91,9 @@ if (isLoading) {
   return (
     <>
      <div id={`${isOnDarkMode}`}> 
-     <NavBar isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} portfolio={portfolio}  />
+     <NavBar changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} />
       <Principal html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
+      <Portfolio mUp1={mUp1} mUp2={mUp2} mUp3={mUp3} mUp4={mUp4} mUp5={mUp5} mUp6={mUp6} mUp7={mUp7} mUp8={mUp8} isOnSPort={isOnSPort}/>
      </div>
     </>
   )

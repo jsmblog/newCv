@@ -26,6 +26,7 @@
     padding: 3rem ;
 }
 .spanPrinc {
+    font-size: 1.5rem;
     padding: .1rem;
     background-color: var(--co-line-orange-opacity);
 }
@@ -42,6 +43,7 @@
 }
 #myName{
     color: var(--co-dm-blue);
+    font-size: 2rem;
 }
 .contPrincipal_row {
     background-color: var(--co-line-orange-opacity);

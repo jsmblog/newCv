@@ -30,3 +30,7 @@ transition: 2s ease-in-out;
     color: var(--co-letter-blue-sky);
     transition: 2s ease-in-out;
 }
+#onDarkMode .BoxPortfolio {
+    background-color:var(--co-dm-blue-sky); 
+    transition: 2s ease-in-out;  
+}
