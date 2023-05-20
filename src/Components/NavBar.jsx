@@ -32,7 +32,7 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
     </div>
     <div>
     {showSuccessMessage && <div className="PDFdownloaded">PDF downloaded successfully...</div>}
-      <a className={`${isOnDlCv} aOff`} download href="#" onClick={handleDownload}>Download Cv ↓</a>
+      <h3 className={`${isOnDlCv} aOff`}  onClick={handleDownload}>Download Cv ↓</h3>
     </div>
     <div className={`${isOnCellphone} aOff`}>
       <div><a href="tel:+593962915626" ><button><h2>CellPhone →</h2></button></a></div>

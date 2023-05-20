@@ -37,6 +37,7 @@
     transition: .5s ease-in-out;
 }
 .menuHamburguer {
+  cursor: pointer;
     display: none;
     position: absolute;
     z-index: 5;
@@ -51,6 +52,7 @@
 .aOff {
     display: none;
 }
+
 .menuHamburguer {
     display: inline-flex;
 }
