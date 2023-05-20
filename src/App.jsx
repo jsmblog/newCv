@@ -22,12 +22,14 @@ import NavBar from './Components/NavBar'
 import './App.css'
 import Principal from './Components/Principal'
 import { useState } from 'react'
+import { useEffect } from 'react'
+
 
 function App() {
  const [darkMode, setDarkMode] = useState(false)
  const [downloadCv, setdownLoadCv] = useState(false)
  const [cellphone, setCellphone] = useState(false)
-
+ const [isLoading, setIsLoading] = useState(true);
  const changeDarkMode = ()=> {
   setDarkMode(!darkMode)
   console.log(darkMode)
@@ -48,6 +50,27 @@ function App() {
  const isOnDlCv = (downloadCv) ? "menuHamburguer slide-in-right" : "" ;
  const isOnCellphone = (cellphone) ? "cellPhoneAndEmail slide-in-right" : "" ;
  const changeIconMh = (downloadCv) ? `${equis}` : `${menuHam}` ;
+
+ // effect loading 
+ useEffect(() => {
+  const timer = setTimeout(() => {
+    setIsLoading(false);
+  }, 1800); // 3000 milliseconds = 3 seconds
+
+  return () => clearTimeout(timer); // Clears the timer if the component is unmounted before it finishes
+}, []); // The second argument to useEffect is an empty array to ensure that it is only executed once when mounting the component.
+
+if (isLoading) {
+  return (
+    <div className="loader">
+      <div className='loaderStyleCe'>
+      <div className="lds-hourglass"></div>
+      {/* loading animation this style is stylePrincipal*/}
+      <h2>CHARGING...</h2>
+      </div>
+    </div>
+  );
+}
   return (
     <>
      <div id={`${isOnDarkMode}`}> 
