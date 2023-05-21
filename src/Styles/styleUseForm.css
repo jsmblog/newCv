@@ -1,0 +1,75 @@
+.ContForm {
+    background-color: var(--co-body-principal);
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 74vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.ContForm {
+    display: none;
+}
+.ContForm {
+    display: inline-flex;
+}
+.BoxForm {
+    padding: 4rem 2rem;
+}
+.BoxForm form {
+    border-radius: 7px;
+    background-color: var(--co-gray-light);
+    border-bottom: 3px solid var(--co-dm-blue);
+    box-shadow: 0 0 15px 1px var(--co-cyan-sky-navbar);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+}
+.SmSConfirmed {
+    border: 1px solid var(--co-dm-blue);
+    border-radius: 7px;
+    position: relative;
+    bottom: 3.5rem;
+    padding: .1rem;
+    
+}
+.SmsContactMe {
+    display: flex;
+    justify-content: center;
+}
+.scale-in-center {
+	-webkit-animation: scale-in-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

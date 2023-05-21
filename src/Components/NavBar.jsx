@@ -1,8 +1,18 @@
 import { useState } from "react";
+import UserForm from "./UserForm";
 
-const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort}) => {
+const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis}) => {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [visibilityForm, setVisibilityForm] = useState(false)
+
+  const changeForm = ()=> {
+    setVisibilityForm(!visibilityForm)
+    console.log(visibilityForm)
+  }
+
+  const onForm = (visibilityForm) ? "ContForm scale-in-center" : ""
+  const onFormIcon = (visibilityForm) ? `${equis}` : `${arrow}`
 
   const handleDownload = () => {
     const pdfURL = '/src/Img/Cv-rb-JoelSm.pdf';
@@ -36,8 +46,9 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
     </div>
     <div className={`${isOnCellphone} aOff`}>
       <div><a href="tel:+593962915626" ><button><h2>CellPhone →</h2></button></a></div>
-      <div><button><h2>Email →</h2></button></div>
+      <div><button onClick={changeForm}><h2>Email <img width={15} src={onFormIcon} alt="" /></h2></button></div>
     </div>
+    <UserForm onForm={onForm} />
     </>
   )
 }

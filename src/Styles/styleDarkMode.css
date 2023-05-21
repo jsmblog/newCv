@@ -34,3 +34,7 @@ transition: 2s ease-in-out;
     background-color:var(--co-dm-blue-sky); 
     transition: 2s ease-in-out;  
 }
+#onDarkMode .ContForm {
+    background-color:var(--co-dm-blue-sky); 
+    transition: 2s ease-in-out;
+}

@@ -25,6 +25,7 @@ import mUp5 from './Img/mockupFiveth.png'
 import mUp6 from './Img/mockupSixth.png'
 import mUp7 from './Img/mockupSeven.png'
 import mUp8 from './Img/mockupEight.png'
+import arrow from './Img/arrow.png'
 /************************************************************/
 import NavBar from './Components/NavBar'
 import './App.css'
@@ -91,7 +92,7 @@ if (isLoading) {
   return (
     <>
      <div id={`${isOnDarkMode}`}> 
-     <NavBar changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} />
+     <NavBar arrow={arrow} equis={equis} changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} />
       <Principal html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
       <Portfolio mUp1={mUp1} mUp2={mUp2} mUp3={mUp3} mUp4={mUp4} mUp5={mUp5} mUp6={mUp6} mUp7={mUp7} mUp8={mUp8} isOnSPort={isOnSPort}/>
      </div>
