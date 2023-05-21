@@ -57,7 +57,7 @@ useEffect(() => {
             <div className='SmsContactMe'><h2>{t("title.Contact-Me!")}</h2></div>
         <form onSubmit={handleSubmit}>
       <label>
-        {t("title.Name:")}
+        Name:
         <input
         required
         placeholder='Your Name here...'
@@ -81,7 +81,7 @@ useEffect(() => {
       </label>
       <br />
       <label>
-        {t("title.Message:")}
+        Message:
         <textarea
         placeholder='write here...'
           name="message"
@@ -90,12 +90,12 @@ useEffect(() => {
         />
       </label>
       <br />
-      <button className='btnSendEmail' type="submit">{t("title.")}</button>
+      <button className='btnSendEmail' type="submit">{t("title.Send-Email")}</button>
     </form>
         </div>
         {statusMessages && (
         <div className='SmSConfirmed'>
-          <h3>{t("title.Status:")}</h3>
+          <h3>Status:</h3>
           <p>{statusMessages}</p>
         </div>
       )}

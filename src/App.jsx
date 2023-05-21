@@ -79,6 +79,7 @@ const Es = () => {
 
  const isOnDarkMode = (darkMode) ? "onDarkMode" : "" ;
  const changeIconDm = (darkMode) ? `${sol}` : `${moon}` ;
+ const changeIconLanguage = (changeLanguage) ? `${equis}` : `${translateLogo}` ;
 
  const OnChangeLanguage = (changeLanguage) ? "BtnLanguage slide-in-blurred-bottom": ""
  const isOnDlCv = (downloadCv) ? "menuHamburguer slide-in-right" : "" ;
@@ -109,7 +110,7 @@ if (isLoading) {
   return (
     <>
      <div id={`${isOnDarkMode}`}> 
-     <NavBar t={t} En={En} Es={Es} OnChangeLanguage={OnChangeLanguage} changeLgEnEs={changeLgEnEs} arrow={arrow} equis={equis} changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} />
+     <NavBar changeIconLanguage={changeIconLanguage} t={t} En={En} Es={Es} OnChangeLanguage={OnChangeLanguage} changeLgEnEs={changeLgEnEs} arrow={arrow} equis={equis} changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} iconCellphone={iconCellphone} />
       <Principal t={t} html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
       <Portfolio t={t} mUp1={mUp1} mUp2={mUp2} mUp3={mUp3} mUp4={mUp4} mUp5={mUp5} mUp6={mUp6} mUp7={mUp7} mUp8={mUp8} isOnSPort={isOnSPort}/>
      </div>

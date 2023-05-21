@@ -1,7 +1,7 @@
 import { useState } from "react";
 import UserForm from "./UserForm";
 
-const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis ,changeLgEnEs ,OnChangeLanguage , En , Es , t}) => {
+const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis ,changeLgEnEs ,OnChangeLanguage , En , Es , t ,changeIconLanguage}) => {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [visibilityForm, setVisibilityForm] = useState(false)
@@ -32,7 +32,7 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
     <>
     <nav className="navBarMenu">
         <div><img onClick={changeDlCv} width={45} src={changeIconMh} alt="img-" /></div>
-        <div><img onClick={changeLgEnEs} width={45} src={translateLogo} alt="img-" /></div>
+        <div><img onClick={changeLgEnEs} width={45} src={changeIconLanguage} alt="img-" /></div>
         <div><img onClick={changeCellphone} width={45} src={iconCellphone} alt="img-" /></div>
         <div><img onClick={changeVPort} width={45} src={changeIconSPort} alt="img-" /></div>
         <div><img onClick={changeDarkMode} width={45} src={changeIconDm} alt="img-" /></div>
