@@ -37,6 +37,7 @@
     "Name:" : "Name:" ,
     "Message:" : "Message:" ,
     "Send-Email" : "Send Email" ,
-    "Status:" : "Status:"
+    "Status:" : "Status:" ,
+    "I-know-how-to-use" : "I know how to use"
     }
 }

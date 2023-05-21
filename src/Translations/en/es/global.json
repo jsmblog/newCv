@@ -38,6 +38,7 @@
     "Name:" : "Nombre:" ,
     "Message:" : "Mensaje:" ,
     "Send-Email" : "Enviar Email" ,
-    "Status:" : "Estado:"
+    "Status:" : "Estado:" , 
+    "I-know-how-to-use" : "Sé como usar"
         }
 }

@@ -109,12 +109,14 @@ top: 75%;
   background-color: var(--co-cyan-white);
 }
 .BtnLanguage button {
+  display: flex;
+  justify-content: center;
   margin: .1rem 0;
   font-size: 1.3rem;
   border-radius: 5px;
   border: 1px solid var(--co-dm-blue);
   cursor: pointer;
-padding: 0 .1rem;
+  padding: .13rem;
 }
 .BtnLanguage {
   display: none;

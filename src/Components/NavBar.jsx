@@ -1,7 +1,7 @@
 import { useState } from "react";
 import UserForm from "./UserForm";
 
-const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis ,changeLgEnEs ,OnChangeLanguage , En , Es , t ,changeIconLanguage ,eeuu , espana}) => {
+const NavBar = ({ iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis ,changeLgEnEs ,OnChangeLanguage , En , Es , t ,changeIconLanguage ,eeuu , espana}) => {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [visibilityForm, setVisibilityForm] = useState(false)
@@ -15,7 +15,7 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
   const onFormIcon = (visibilityForm) ? `${equis}` : `${arrow}`
 
   const handleDownload = () => {
-    const pdfURL = '/src/Img/Cv-rb-JoelSm.pdf';
+    const pdfURL = '/public/Cv-rb-JoelSm.pdf';
     const link = document.createElement('a');
     link.href = pdfURL;
     link.download = 'Cv-Joel.pdf';

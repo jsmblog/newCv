@@ -59,6 +59,7 @@ const Principal = ({whatsapp , linkedin , html , css , js , react , github , sla
             <SwiperSlide>
             <div className="contPrincipal " >
                 <div className="contPrincipalData ">
+                  <div><h3>{t("title.I-know-how-to-use")}:</h3></div>
                     <div className="contPrincipal_row">
                         <div><img width={25} src={html} alt="" /><span>HTML</span></div>
                         <div><img width={25} src={css} alt="" /><span>CSS</span></div>
