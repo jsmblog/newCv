@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 
-const UserForm = ({onForm}) => {
+const UserForm = ({onForm , t}) => {
   const [user, setUser] = useState({
     name: '',
     email: '',
@@ -54,10 +54,10 @@ useEffect(() => {
     <>
     <div className={`${onForm} aOff`}>
         <div className='BoxForm'>
-            <div className='SmsContactMe'><h2>Contact Me!</h2></div>
+            <div className='SmsContactMe'><h2>{t("title.Contact-Me!")}</h2></div>
         <form onSubmit={handleSubmit}>
       <label>
-        Name:
+        {t("title.Name:")}
         <input
         required
         placeholder='Your Name here...'
@@ -81,7 +81,7 @@ useEffect(() => {
       </label>
       <br />
       <label>
-        Message:
+        {t("title.Message:")}
         <textarea
         placeholder='write here...'
           name="message"
@@ -90,12 +90,12 @@ useEffect(() => {
         />
       </label>
       <br />
-      <button type="submit">Send Email</button>
+      <button className='btnSendEmail' type="submit">{t("title.")}</button>
     </form>
         </div>
         {statusMessages && (
         <div className='SmSConfirmed'>
-          <h3>Status:</h3>
+          <h3>{t("title.Status:")}</h3>
           <p>{statusMessages}</p>
         </div>
       )}

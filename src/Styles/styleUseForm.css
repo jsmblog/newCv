@@ -40,6 +40,13 @@
     padding: .1rem;
     
 }
+.btnSendEmail {
+    cursor: pointer;
+    border: 1px solid var(--co-dm-blue);
+    padding: .1rem;
+    border-radius: 7px;
+    background-color: var(--co-cyan-sky-navbar);
+}
 .SmsContactMe {
     display: flex;
     justify-content: center;

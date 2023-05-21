@@ -33,6 +33,8 @@ import Principal from './Components/Principal'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import Portfolio from './Components/Portfolio'
+import {useTranslation} from "react-i18next"
+
 
 
 function App() {
@@ -41,29 +43,44 @@ function App() {
  const [cellphone, setCellphone] = useState(false)
  const [isLoading, setIsLoading] = useState(true);
  const [visibilityPortfolio, setVisibilityPortfolio] = useState(false)
-    
- const changeDarkMode = ()=> {
+ const [changeLanguage, setChangeLanguage] = useState(false)
+
+ const changeLgEnEs = ()=> {
+  setChangeLanguage(!changeLanguage)
+  console.log(changeLanguage)
+}
+const changeDarkMode = ()=> {
   setDarkMode(!darkMode)
   console.log(darkMode)
- }
+}
  const changeDlCv = ()=> {
-  setdownLoadCv(!downloadCv)
+   setdownLoadCv(!downloadCv)
   console.log(downloadCv)
- }
+}
 
  const changeCellphone = ()=> {
   setCellphone(!cellphone)
   console.log(cellphone)
- }
+}
 
- const changeVPort = ()=> {
+const changeVPort = ()=> {
   setVisibilityPortfolio(!visibilityPortfolio)
   console.log(visibilityPortfolio)
+}
+
+const {t , i18n } = useTranslation("global")
+
+const En = () => {
+  i18n.changeLanguage("en")
+}
+const Es = () => {
+  i18n.changeLanguage("es")
 }
 
  const isOnDarkMode = (darkMode) ? "onDarkMode" : "" ;
  const changeIconDm = (darkMode) ? `${sol}` : `${moon}` ;
 
+ const OnChangeLanguage = (changeLanguage) ? "BtnLanguage slide-in-blurred-bottom": ""
  const isOnDlCv = (downloadCv) ? "menuHamburguer slide-in-right" : "" ;
  const isOnCellphone = (cellphone) ? "cellPhoneAndEmail slide-in-right" : "" ;
  const changeIconMh = (downloadCv) ? `${equis}` : `${menuHam}` ;
@@ -92,9 +109,9 @@ if (isLoading) {
   return (
     <>
      <div id={`${isOnDarkMode}`}> 
-     <NavBar arrow={arrow} equis={equis} changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} />
-      <Principal html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
-      <Portfolio mUp1={mUp1} mUp2={mUp2} mUp3={mUp3} mUp4={mUp4} mUp5={mUp5} mUp6={mUp6} mUp7={mUp7} mUp8={mUp8} isOnSPort={isOnSPort}/>
+     <NavBar t={t} En={En} Es={Es} OnChangeLanguage={OnChangeLanguage} changeLgEnEs={changeLgEnEs} arrow={arrow} equis={equis} changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} translateLogo={translateLogo} iconCellphone={iconCellphone} />
+      <Principal t={t} html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
+      <Portfolio t={t} mUp1={mUp1} mUp2={mUp2} mUp3={mUp3} mUp4={mUp4} mUp5={mUp5} mUp6={mUp6} mUp7={mUp7} mUp8={mUp8} isOnSPort={isOnSPort}/>
      </div>
     </>
   )

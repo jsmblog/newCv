@@ -1,11 +1,11 @@
 import { useState } from "react";
 import UserForm from "./UserForm";
 
-const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis}) => {
+const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis ,changeLgEnEs ,OnChangeLanguage , En , Es , t}) => {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [visibilityForm, setVisibilityForm] = useState(false)
-
+  
   const changeForm = ()=> {
     setVisibilityForm(!visibilityForm)
     console.log(visibilityForm)
@@ -32,7 +32,7 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
     <>
     <nav className="navBarMenu">
         <div><img onClick={changeDlCv} width={45} src={changeIconMh} alt="img-" /></div>
-        <div><img width={45} src={translateLogo} alt="img-" /></div>
+        <div><img onClick={changeLgEnEs} width={45} src={translateLogo} alt="img-" /></div>
         <div><img onClick={changeCellphone} width={45} src={iconCellphone} alt="img-" /></div>
         <div><img onClick={changeVPort} width={45} src={changeIconSPort} alt="img-" /></div>
         <div><img onClick={changeDarkMode} width={45} src={changeIconDm} alt="img-" /></div>
@@ -41,14 +41,18 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
       <span className="JSM">JSM</span>
     </div>
     <div>
-    {showSuccessMessage && <div className="PDFdownloaded">PDF downloaded successfully...</div>}
-      <h3 className={`${isOnDlCv} aOff`}  onClick={handleDownload}>Download Cv ↓</h3>
+    {showSuccessMessage && <div className="PDFdownloaded">{t("title.PDF-downloaded-successfully...")}</div>}
+      <h3 className={`${isOnDlCv} aOff`}  onClick={handleDownload}>{t("title.Download-Cv-↓")}</h3>
     </div>
     <div className={`${isOnCellphone} aOff`}>
-      <div><a href="tel:+593962915626" ><button><h2>CellPhone →</h2></button></a></div>
-      <div><button onClick={changeForm}><h2>Email <img width={15} src={onFormIcon} alt="" /></h2></button></div>
+      <div><a href="tel:+593962915626" ><button><h2>{t("title.CellPhone-→")}</h2></button></a></div>
+      <div><button onClick={changeForm}><h2>{t("title.Email")}<img width={15} src={onFormIcon} alt="" /></h2></button></div>
     </div>
-    <UserForm onForm={onForm} />
+    <div className={`${OnChangeLanguage} aOff`}>
+      <div><button onClick={En}>En</button></div>
+      <div><button onClick={Es}>ES</button></div>
+    </div>
+    <UserForm t={t} onForm={onForm} />
     </>
   )
 }
