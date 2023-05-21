@@ -109,17 +109,21 @@ top: 75%;
   background-color: var(--co-cyan-white);
 }
 .BtnLanguage button {
+  margin: .1rem 0;
   font-size: 1.3rem;
   border-radius: 5px;
   border: 1px solid var(--co-dm-blue);
   cursor: pointer;
-padding: .3rem;
+padding: 0 .1rem;
 }
 .BtnLanguage {
   display: none;
 }
 .BtnLanguage {
   display: inline;
+}
+.BtnLanguage button:hover {
+  background-color: var(--co-cyan-sky-navbar);
 }
 /*animations*/
 .slide-in-right {

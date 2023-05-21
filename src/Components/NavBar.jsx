@@ -1,7 +1,7 @@
 import { useState } from "react";
 import UserForm from "./UserForm";
 
-const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis ,changeLgEnEs ,OnChangeLanguage , En , Es , t ,changeIconLanguage}) => {
+const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm , changeDlCv , isOnDlCv ,changeIconMh ,changeCellphone , isOnCellphone ,changeVPort , changeIconSPort , arrow , equis ,changeLgEnEs ,OnChangeLanguage , En , Es , t ,changeIconLanguage ,eeuu , espana}) => {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [visibilityForm, setVisibilityForm] = useState(false)
@@ -49,8 +49,8 @@ const NavBar = ({translateLogo , iconCellphone , changeDarkMode , changeIconDm ,
       <div><button onClick={changeForm}><h2>{t("title.Email")}<img width={15} src={onFormIcon} alt="" /></h2></button></div>
     </div>
     <div className={`${OnChangeLanguage} aOff`}>
-      <div><button onClick={En}>En</button></div>
-      <div><button onClick={Es}>ES</button></div>
+      <div><button onClick={En}><img width={30} src={eeuu} alt="" /></button></div>
+      <div><button onClick={Es}><img width={30} src={espana} alt="" /></button></div>
     </div>
     <UserForm t={t} onForm={onForm} />
     </>
