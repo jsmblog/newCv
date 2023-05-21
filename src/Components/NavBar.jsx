@@ -15,7 +15,7 @@ const NavBar = ({ iconCellphone , changeDarkMode , changeIconDm , changeDlCv , i
   const onFormIcon = (visibilityForm) ? `${equis}` : `${arrow}`
 
   const handleDownload = () => {
-    const pdfURL = '/public/Cv-rb-JoelSm.pdf';
+    const pdfURL = '/Cv-rb-JoelSm.pdf';
     const link = document.createElement('a');
     link.href = pdfURL;
     link.download = 'Cv-Joel.pdf';
