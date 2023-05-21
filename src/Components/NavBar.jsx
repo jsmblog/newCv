@@ -20,14 +20,14 @@ const NavBar = ({ iconCellphone , changeDarkMode , changeIconDm , changeDlCv , i
     link.href = pdfURL;
     link.download = 'Cv-Joel.pdf';
     link.click();
-
-    // Mostrar el mensaje de éxito durante 2 segundos
+    
+    console.log(pdfURL)
+    // show sms per 2.5s 
     setShowSuccessMessage(true);
     setTimeout(() => {
       setShowSuccessMessage(false);
     }, 2500);
   }
-  
   return (
     <>
     <nav className="navBarMenu">
