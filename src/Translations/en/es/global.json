@@ -39,6 +39,8 @@
     "Message:" : "Mensaje:" ,
     "Send-Email" : "Enviar Email" ,
     "Status:" : "Estado:" , 
-    "I-know-how-to-use" : "Sé como usar"
+    "I-know-how-to-use" : "Sé como usar" ,
+    "Play-with-a-partner-or-with-the-computer." : "Juega con un compañero o con la computadora." ,
+    "Have-fun-playing-this-classic-snake-game." : "Diviertete jugando este clasico juego de snake."
         }
 }

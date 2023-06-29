@@ -25,6 +25,8 @@ import mUp5 from './Img/mockupFiveth.png'
 import mUp6 from './Img/mockupSixth.png'
 import mUp7 from './Img/mockupSeven.png'
 import mUp8 from './Img/mockupEight.png'
+import mUp9 from './Img/ticTacToe.png'
+import mUp10 from './Img/snakeGame.png'
 import arrow from './Img/arrow.png'
 import eeuu from './Img/eeuu.png'
 import espana from './Img/espana.png'
@@ -114,7 +116,7 @@ if (isLoading) {
      <div id={`${isOnDarkMode}`}> 
      <NavBar eeuu={eeuu} espana={espana} changeIconLanguage={changeIconLanguage} t={t} En={En} Es={Es} OnChangeLanguage={OnChangeLanguage} changeLgEnEs={changeLgEnEs} arrow={arrow} equis={equis} changeIconSPort={changeIconSPort} changeVPort={changeVPort} isOnCellphone={isOnCellphone} changeCellphone={changeCellphone} changeIconMh={changeIconMh} isOnDlCv={isOnDlCv} changeDlCv={changeDlCv} changeIconDm={changeIconDm}  changeDarkMode={changeDarkMode} iconCellphone={iconCellphone} />
       <Principal t={t} html={html} css={css} js={js} react={react} github={github} slack={slack} notion={notion} bootstrap={bootstrap} linkedin={linkedin} whatsapp={whatsapp} />
-      <Portfolio t={t} mUp1={mUp1} mUp2={mUp2} mUp3={mUp3} mUp4={mUp4} mUp5={mUp5} mUp6={mUp6} mUp7={mUp7} mUp8={mUp8} isOnSPort={isOnSPort}/>
+      <Portfolio t={t} mUp1={mUp1} mUp2={mUp2} mUp3={mUp3} mUp4={mUp4} mUp5={mUp5} mUp6={mUp6} mUp7={mUp7} mUp8={mUp8} mUp9={mUp9} mUp10={mUp10} isOnSPort={isOnSPort}/>
      </div>
     </>
   )
